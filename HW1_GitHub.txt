@@ -219,11 +219,12 @@ git push
 
 42.Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
 vim new.xml - заходим в редактор vim
-<xml>
+<new>
 	<Name>Luba</Name>
 	<Age>34</Age>
 	<Pets>1</Pets>
 	<Desired_Salary>1000</Desired_salary" 
+</new>
 
 43.Отправить изменения на внешний репозиторий.
 git add .
@@ -234,17 +235,18 @@ git push
 cat > preferences.xml
 45.В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
 vim preferences.xml - заходим в редактор vim
-<XML>
+<preferences>
 	<favorite_movie>home_alone</favorite_movie>
 	<favorite_series>Breaking_Bad</favorite_series>
 	<favorite_food>cheese</favorite_food>
 	<favorite_season>summer</favorite_season>
 	<country_to_visit>USA</country_to_visit>
+</preferences>
 
 46.Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
 touch sklls.xml
 vim sklls.xml
-<xml>
+<sklls>
 	<1>Basic_theory</1>
 	<2>HTTP</2>
 	<3>HTTP</3>
@@ -256,6 +258,7 @@ vim sklls.xml
 	<9>bash_scripting</9>
 	<10>Charles_Fiddler</10>
 	<11>others</11>
+</sklls>
 
 47.Сделать коммит в одну строку.
 git add . & git commit -m "add preferences.xml and sklls.xml"
@@ -275,13 +278,14 @@ Add file-Create new file
 51.На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
 Захожу в файл и кликаю edit this file.
 
-<xml>
+<bug_report>
   <Title>The buy button does not work</Title>
   <Priority>High</Priority>
   <Severity>Blocker</Severity>
   <Steps to reproduce>1) open the catalog. 2)put the product in the basket. 3) go to the basket. 4) click "order"</Steps to reproduce>
   <Expected result>It was made the transition to the order payment page</Expected result>
   <Actual result>the button "order" doesn't work</Actual result>
+</bug_report>
 
 52.Сделать Commit changes (сохранить) изменения на веб интерфейсе.
 Заполняю поле commit changes "Update bug_report.xml".
