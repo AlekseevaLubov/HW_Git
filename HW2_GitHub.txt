@@ -1,0 +1,68 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman:
+git branch Postman
+
+- Jmeter:
+git branch Jmeter
+
+- CheckLists:
+git branch CheckLists
+
+- Bug Reports:
+git branch Bug_Reports
+
+- SQL:
+git branch SQL
+
+- Charles:
+git branch Charles
+
+- Mobile testing
+git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий:
+git push -u origin Postman
+git push -u origin Jmeter
+git push -u origin CheckLists
+git push -u origin Bug_Reports
+git push -u origin SQL
+git push -u origin Charles
+git push -u origin Mobile_testing
+
+3. В ветке Bug_Reports сделать текстовый документ со структурой баг репорта
+ git checkout Bug_Reports - переходим в ветку Bug_Reports
+touch bug_report.txt - создаем файл bug_report.txt
+vim bug_report.txt - заходим в редактор VIM и пишем структуру баг-репорта
+
+4. Запушить структуру багрепорта на внешний репозиторий
+git add . 
+git commit -m "add bug_report" 
+git push
+
+5. Вмержить ветку Bug_Reports в Main
+git checkout main - переходим в главную ветку
+git merge Bug_Reports 
+
+6. Запушить main на внешний репозиторий
+git push -u origin main
+
+7. В ветке CheckLists набросать структуру чек листа
+git checkout Checklists - переходим в ветку Checklists
+touch Cheklist.txt - создаем файл Cheklist.txt
+vim Cheklist.txt - заходим в редактор vim и вносим изменения
+
+8. Запушить структуру на внешний репозиторий
+git add . 
+git commit -m "Checklist.txt" 
+git push
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+Нажимаем кнопку "Compare&pull request"
+Выбираем в base: main (куда) и compare: CheckLists (откуда)
+Нажимаем кнопку: Merge pull request, Confirm Merge
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+git checkout main - заходим на главную ветку
+git fetch - сравниваем состояние локального и внешнего репозитория
+git pull - делаем пул изменений
